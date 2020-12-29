@@ -210,7 +210,17 @@ body{
   overflow: hidden;
   color: #046647;
 }
-
+.quotes{
+  width: 80%;
+  margin: 50px auto;
+}
+.quoteInput{
+  width: 60%;
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
 
 @media (max-width:800px){
   .cards{
@@ -224,4 +234,65 @@ body{
     grid-template-columns: 1fr;
     margin: 80px 50px;
   }
+}
+
+.quote{
+  width: 60%;
+  height: 80px;
+  background: #ffffff;
+  margin: 100px auto;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+}
+
+
+
+
+.quoteNumber::before {
+  content: "";
+  position: absolute;
+  top: -130px;
+  right: -30px;
+  width: 90px;
+  height: 180px;
+  background: #741CAF;
+  transform: rotate(-45deg);
+  box-shadow: 0 0 .7rem rgba(0, 0, 0, .5);
+  z-index: -1;
+}
+
+.quoteNumber {
+  position: absolute;
+  margin: 0;
+  top: 15px;
+  right: 15px;
+  color: #ffffff;
+  z-index: 99;
+}
+
+.quote p{
+  position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  width: 80%;
+  font-style: oblique;
+  font-family: cursive;
+}
+
+
+.author {
+	position: absolute;
+	top: 60%;
+	right: 5%;
+  font-family: cursive;
+  font-size: .8rem;
+  font-weight: 500;
+}
+.author::before {
+  content: "⸛ ";
+  vertical-align: middle;
+  font-size: 1.4rem;
 }
